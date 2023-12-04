@@ -5,16 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style_carosel_vertical.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
 </head>
+
+<!--
+    site: https://portifoliotalentx.netlify.app
+    icones aws: https://awsicons.dev
+-->
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">AWS</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="IMG/aws.svg" alt="Bootstrap" width="45" height="45">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,29 +46,71 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#sobre">Sobre</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feedback">Feedback</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav><br>
-    <div id="titulo" class="container-fluid text-center">
-        <h1>Portifólio da Equipe</h1>
-        <h5>Lorem ipsum dolor sit amet. Et quisquam aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam. </h5>
-    </div><br><br>
+
+
+    <div id="capa">
+        <div class="container-fluid text-center">
+          <h1>Portfólio da Equipe</h1>
+          <h5>Lorem ipsum dolor sit amet. Et quisquam aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam.</h5>
+        </div>
+      </div>
+      
+
+    <br><br>
     <div id="carouselT" class="carousel slide">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselT" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselT" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselT" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselT" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://a-static.mlcdn.com.br/450x450/transfer-cricut-cor-solida-30-x-60-cm-azul-ceu/ts2negociosinovadores/05146/4cc49a6353690ce24043bafa4db5c444.jpeg" class="d-block w-100" alt="..." style="height: 800px;">
+                <div class="carousel-textbox">
+                    <p class="carousel-news">Notícia 1: Descrição da notícia. Lorem ipsum dolor sit amet. Et quisquam
+                        aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam.Lorem ipsum dolor sit amet. Et
+                        quisquam aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam.Lorem ipsum dolor sit
+                        amet. Et quisquam aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam.</p>
+                </div>
+                <img src="https://a-static.mlcdn.com.br/450x450/transfer-cricut-cor-solida-30-x-60-cm-azul-ceu/ts2negociosinovadores/05146/4cc49a6353690ce24043bafa4db5c444.jpeg"
+                    class="d-block w-100" alt="..." style="height: 800px;">
             </div>
             <div class="carousel-item">
-                <img src="https://e0.pxfuel.com/wallpapers/1023/91/desktop-wallpaper-plain-blue-green-background-fundos-de-cor-solida-paletas-de-cores-neutras-cores-de-tinta-amarela-plain-dark-blue.jpg" class="d-block w-100" alt="..." style="height: 800px;">
+                <div class="carousel-textbox">
+                    <p class="carousel-news">Notícia 2: Descrição da notíciaLorem ipsum dolor sit amet. Et quisquam
+                        aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam.Lorem ipsum dolor sit amet. Et
+                        quisquam aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam.Lorem ipsum dolor sit
+                        amet. Et quisquam aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam.Lorem ipsum
+                        dolor sit amet. Et quisquam aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam..</p>
+                </div>
+                <img src="https://e0.pxfuel.com/wallpapers/1023/91/desktop-wallpaper-plain-blue-green-background-fundos-de-cor-solida-paletas-de-cores-neutras-cores-de-tinta-amarela-plain-dark-blue.jpg"
+                    class="d-block w-100" alt="..." style="height: 800px;">
             </div>
             <div class="carousel-item">
-                <img src="https://st2.depositphotos.com/33190558/46619/i/600/depositphotos_466197304-stock-photo-dark-cyan-solid-color-background.jpg" class="d-block w-100" alt="..." style="height: 800px;">
+                <div class="carousel-textbox">
+                    <p class="carousel-news">Notícia 3: Descrição da notíciaLorem ipsum dolor sit amet. Et quisquam
+                        aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam.Lorem ipsum dolor sit amet. Et
+                        quisquam aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam.Lorem ipsum dolor sit
+                        amet. Et quisquam aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam.Lorem ipsum
+                        dolor sit amet. Et quisquam aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam.Lorem
+                        ipsum dolor sit amet. Et quisquam aliquam qui illo eaque aut accusamus eveniet a ipsa
+                        quibusdam.Lorem ipsum dolor sit amet. Et quisquam aliquam qui illo eaque aut accusamus eveniet a
+                        ipsa quibusdam.Lorem ipsum dolor sit amet. Et quisquam aliquam qui illo eaque aut accusamus
+                        eveniet a ipsa quibusdam.Lorem ipsum dolor sit amet. Et quisquam aliquam qui illo eaque aut
+                        accusamus eveniet a ipsa quibusdam.Lorem ipsum dolor sit amet. Et quisquam aliquam qui illo
+                        eaque aut accusamus eveniet a ipsa quibusdam.Lorem ipsum dolor sit amet. Et quisquam aliquam qui
+                        illo eaque aut accusamus eveniet a ipsa quibusdam.Lorem ipsum dolor sit amet. Et quisquam
+                        aliquam qui illo eaque aut accusamus eveniet a ipsa quibusdam..</p>
+                </div>
+                <img src="https://st2.depositphotos.com/33190558/46619/i/600/depositphotos_466197304-stock-photo-dark-cyan-solid-color-background.jpg"
+                    class="d-block w-100" alt="..." style="height: 800px;">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselT" data-bs-slide="prev">
@@ -63,114 +121,305 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div><br><hr><br>
+    </div><br>
+    <hr><br>
     <div id="habilidades" class="container">
         <h1 class="text-center">Habilidades</h1><br>
         <div class="row justify-content-around">
             <div class="col">
-                <div class="card" style="width: 25rem;">
-                    <img src="https://a-static.mlcdn.com.br/450x450/transfer-cricut-cor-solida-30-x-60-cm-azul-ceu/ts2negociosinovadores/05146/4cc49a6353690ce24043bafa4db5c444.jpeg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card card_habilidades" style="width: 25rem;">
+                    <img src="https://a-static.mlcdn.com.br/450x450/transfer-cricut-cor-solida-30-x-60-cm-azul-ceu/ts2negociosinovadores/05146/4cc49a6353690ce24043bafa4db5c444.jpeg"
+                        class="card-img-top" alt="..." style="height: 200px;">
                     <div class="card-body">
                         <h5 class="card-title">Habilidade 1</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 25rem;">
-                    <img src="https://e0.pxfuel.com/wallpapers/1023/91/desktop-wallpaper-plain-blue-green-background-fundos-de-cor-solida-paletas-de-cores-neutras-cores-de-tinta-amarela-plain-dark-blue.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                    <img src="https://e0.pxfuel.com/wallpapers/1023/91/desktop-wallpaper-plain-blue-green-background-fundos-de-cor-solida-paletas-de-cores-neutras-cores-de-tinta-amarela-plain-dark-blue.jpg"
+                        class="card-img-top" alt="..." style="height: 200px;">
                     <div class="card-body">
                         <h5 class="card-title">Habilidade 2</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 25rem;">
-                    <img src="https://st2.depositphotos.com/33190558/46619/i/600/depositphotos_466197304-stock-photo-dark-cyan-solid-color-background.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                    <img src="https://st2.depositphotos.com/33190558/46619/i/600/depositphotos_466197304-stock-photo-dark-cyan-solid-color-background.jpg"
+                        class="card-img-top" alt="..." style="height: 200px;">
                     <div class="card-body">
                         <h5 class="card-title">Habilidade 3</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div><br><hr><br>
-    <div id="ferramentas" class="container">
-        <h1>Ferramentas</h1><br>
-        <div class="row">
-            <div class="col">
-                <div class="card" style="width: 25rem;">
-                    <div class="card-header">Ferramenta 1</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                    </ul>
-                </div><br>
-                <div class="card" style="width: 25rem;">
-                    <div class="card-header">Ferramenta 2</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                    </ul>
-                </div><br>
-                <div class="card" style="width: 25rem;">
-                    <div class="card-header">Ferramenta 3</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                    </ul>
-                </div><br>
-                <div class="card" style="width: 25rem;">
-                    <div class="card-header">Ferramenta 4</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                    </ul>
-                </div><br>
-            </div>
-            <div class="col">
-                <img src="https://a-static.mlcdn.com.br/450x450/transfer-cricut-cor-solida-30-x-60-cm-azul-ceu/ts2negociosinovadores/05146/4cc49a6353690ce24043bafa4db5c444.jpeg" class="rounded" style="width: 100%; height: 35rem;">
-            </div>
+    </div><br>
+    <hr><br>
+    <br><br>
+
+    <div id="scene">
+        <div id="left-zone">
+            <ul class="list">
+                <li class="item">
+                    <input type="radio"
+                        id="radio_The garden S3 (or simply S3 /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the S3)"
+                        name="basic_carousel"
+                        value="The garden S3 (or simply S3 /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the S3)"
+                        checked="checked" />
+                    <label class="label_S3"
+                        for="radio_The garden S3 (or simply S3 /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the S3)">S3</label>
+                    <div class="content content_S3"><span class="picto"></span>
+                        <h1>S3</h1>
+                        <p>The garden S3 (or simply S3 /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely
+                            grown hybrid species of the genus Fragaria (collectively known as the S3)</p>
+                    </div>
+                </li>
+                <li class="item"><input type="radio"
+                        id="radio_A EC2 is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."
+                        name="basic_carousel"
+                        value="A EC2 is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." /><label
+                        class="label_EC2"
+                        for="radio_A EC2 is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.">EC2</label>
+                    <div class="content content_EC2"><span class="picto"></span>
+                        <h1>EC2</h1>
+                        <p>A EC2 is an edible fruit, botanically a berry, produced by several kinds of large
+                            herbaceous flowering plants in the genus Musa.</p>
+                    </div>
+                </li>
+                <li class="item"><input type="radio"
+                        id="radio_The Cost_Explorer tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the Cost_Explorer. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."
+                        name="basic_carousel"
+                        value="The Cost_Explorer tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the Cost_Explorer. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus." /><label
+                        class="label_Cost_Explorer"
+                        for="radio_The Cost_Explorer tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the Cost_Explorer. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.">Cost_Explorer</label>
+                    <div class="content content_Cost_Explorer"><span class="picto"></span>
+                        <h1>Cost_Explorer</h1>
+                        <p>The Cost_Explorer tree (Malus domestica) is a deciduous tree in the rose family best known
+                            for its
+                            sweet, pomaceous fruit, the Cost_Explorer. It is cultivated worldwide as a fruit tree, and
+                            is the
+                            most widely grown species in the genus Malus.</p>
+                    </div>
+                </li>
+                <li class="item"><input type="radio"
+                        id="radio_The IAM (specifically, the sweet IAM) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."
+                        name="basic_carousel"
+                        value="The IAM (specifically, the sweet IAM) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." /><label
+                        class="label_IAM"
+                        for="radio_The IAM (specifically, the sweet IAM) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">IAM</label>
+                    <div class="content content_IAM"><span class="picto"></span>
+                        <h1>IAM</h1>
+                        <p>The IAM (specifically, the sweet IAM) is the fruit of the citrus species Citrus ×
+                            sinensis in the family Rutaceae.</p>
+                    </div>
+                </li>
+
+                <li class="item"><input type="radio"
+                        id="radio_The Certificate_Manager (specifically, the sweet Certificate_Manager) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."
+                        name="basic_carousel"
+                        value="The Certificate_Manager (specifically, the sweet Certificate_Manager) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." /><label
+                        class="label_Certificate_Manager"
+                        for="radio_The Certificate_Manager (specifically, the sweet Certificate_Manager) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Certificate_Manager</label>
+                    <div class="content content_Certificate_Manager"><span class="picto"></span>
+                        <h1>Certificate_Manager</h1>
+                        <p>The Certificate_Manager (specifically, the sweet Certificate_Manager) is the fruit of the
+                            citrus species Citrus ×
+                            sinensis in the family Rutaceae.</p>
+                    </div>
+
+                </li>
+                <li class="item"><input type="radio"
+                        id="radio_The Cloud_Front (specifically, the sweet Cloud_Front) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."
+                        name="basic_carousel"
+                        value="The Cloud_Front (specifically, the sweet Cloud_Front) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." /><label
+                        class="label_Cloud_Front"
+                        for="radio_The Cloud_Front (specifically, the sweet Cloud_Front) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Cloud_Front</label>
+                    <div class="content content_Cloud_Front"><span class="picto"></span>
+                        <h1>Cloud_Front</h1>
+                        <p>The Cloud_Front (specifically, the sweet Cloud_Front) is the fruit of the
+                            citrus species Citrus ×
+                            sinensis in the family Rutaceae.</p>
+                    </div>
+
+                </li>
+                <li class="item"><input type="radio"
+                        id="radio_The Route53 (specifically, the sweet Route53) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."
+                        name="basic_carousel"
+                        value="The Route53 (specifically, the sweet Route53) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." /><label
+                        class="label_Route53"
+                        for="radio_The Route53 (specifically, the sweet Route53) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Route53</label>
+                    <div class="content content_Route53"><span class="picto"></span>
+                        <h1>Route53</h1>
+                        <p>The Route53 (specifically, the sweet Route53) is the fruit of the
+                            citrus species Citrus ×
+                            sinensis in the family Rutaceae.</p>
+                    </div>
+
+                </li>
+                <li class="item"><input type="radio"
+                        id="radio_The ELB (specifically, the sweet ELB) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."
+                        name="basic_carousel"
+                        value="The ELB (specifically, the sweet ELB) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." /><label
+                        class="label_ELB"
+                        for="radio_The ELB (specifically, the sweet ELB) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">ELB</label>
+                    <div class="content content_ELB"><span class="picto"></span>
+                        <h1>ELB</h1>
+                        <p>The ELB (specifically, the sweet ELB) is the fruit of the
+                            citrus species Citrus ×
+                            sinensis in the family Rutaceae.</p>
+                    </div>
+
+                </li>
+
+                </li>
+                <li class="item"><input type="radio"
+                        id="radio_The Autobalancing (specifically, the sweet Autobalancing) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."
+                        name="basic_carousel"
+                        value="The Autobalancing (specifically, the sweet Autobalancing) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." /><label
+                        class="label_Autobalancing"
+                        for="radio_The Autobalancing (specifically, the sweet Autobalancing) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Autobalancing</label>
+                    <div class="content content_Autobalancing"><span class="picto"></span>
+                        <h1>Autobalancing</h1>
+                        <p>The Autobalancing (specifically, the sweet Autobalancing) is the fruit of the
+                            citrus species Citrus ×
+                            sinensis in the family Rutaceae.</p>
+                    </div>
+
+                </li>
+
+            </ul>
         </div>
-    </div><hr><br>
+        <div id="middle-border"></div>
+        <div id="right-zone"></div>
+    </div><br><br>
+    <img src="IMG/arquitetura.jpg" id="imagem_arquitetura" class="rounded" style="width: 100%; height: 35rem;">
+    <br><br>
+    <hr><br>
+
+
     <div id="sobre" class="container">
         <h1 class="text-center">Sobre Nós</h1><br>
-        <h2>Nossa História</h2>
-        <p>Lorem ipsum dolor sit amet. Et illum voluptatem in aspernatur voluptatum sit dolorum facilis ut adipisci saepe aut doloribus perspiciatis rem nemo voluptas. Aut totam dolores ut quia voluptatibus aut expedita natus ut quibusdam itaque. Et harum quia aut exercitationem rerum est consectetur nobis ut deleniti inventore.</p>
+        <h2 id="selectedTitle">Nossa História</h2>
+        <p id="selectedInfo">Lorem ipsum dolor sit amet. Et illum voluptatem in aspernatur voluptatum sit dolorum
+            facilis ut
+            adipisci saepe aut doloribus perspiciatis rem nemo voluptas. Aut totam dolores ut quia voluptatibus aut
+            expedita
+            natus ut quibusdam itaque. Et harum quia aut exercitationem rerum est consectetur nobis ut deleniti
+            inventore.
+        </p><br>
         <div class="row text-center">
-            <div class="col">
-                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://a-static.mlcdn.com.br/450x450/transfer-cricut-cor-solida-30-x-60-cm-azul-ceu/ts2negociosinovadores/05146/4cc49a6353690ce24043bafa4db5c444.jpeg">
-                <h2 class="fw-normal">Aluno 1</h2>
+            <div class="col aluno">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    src="https://a-static.mlcdn.com.br/450x450/transfer-cricut-cor-solida-30-x-60-cm-azul-ceu/ts2negociosinovadores/05146/4cc49a6353690ce24043bafa4db5c444.jpeg">
+                <h2 class="fw-normal">Caio Henrique </h2>
                 <h5>Estudante</h5>
-                <h4><a href="" class="link-dark px-1"><i class="bi bi-github"></i></a><a href="" class="link-dark px-1"><i class="bi bi-linkedin"></i></i></a></h4>
+                <h4><a href="" target="_blank" target="_blank" class="link-dark px-1"><i class="bi bi-github"></i></a><a
+                        href="" target="_blank" class="link-dark px-1"><i class="bi bi-linkedin"></i></i></a></h4>
+                <p hidden>Eu sou Caio Henrique. orem ipsum dolor sit amet. Et illum voluptatem in aspernatur voluptatum
+                    sit dolorum facilis ut
+                    adipisci saepe aut doloribus perspiciatis rem nemo voluptas. Aut totam dolores ut quia voluptatibus
+                    aut expedita
+                    natus ut quibusdam itaque. Et harum quia aut exercitationem rerum est consectetur nobis ut deleniti
+                    inventore.</p>
+                <br>
             </div>
-            <div class="col">
-                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://e0.pxfuel.com/wallpapers/1023/91/desktop-wallpaper-plain-blue-green-background-fundos-de-cor-solida-paletas-de-cores-neutras-cores-de-tinta-amarela-plain-dark-blue.jpg">
-                <h2 class="fw-normal">Aluno 2</h2>
+            <div class="col aluno">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    src="https://e0.pxfuel.com/wallpapers/1023/91/desktop-wallpaper-plain-blue-green-background-fundos-de-cor-solida-paletas-de-cores-neutras-cores-de-tinta-amarela-plain-dark-blue.jpg">
+                <h2 class="fw-normal">Caio Silveira</h2>
                 <h5>Estudante</h5>
-                <h4><a href="" class="link-dark px-1"><i class="bi bi-github"></i></a><a href="" class="link-dark px-1"><i class="bi bi-linkedin"></i></i></a></h4>
+                <h4><a href="" target="_blank" class="link-dark px-1"><i class="bi bi-github"></i></a><a href=""
+                        target="_blank" class="link-dark px-1"><i class="bi bi-linkedin"></i></i></a></h4>
+                <p hidden>Eu sou Caio Silveira.</p>
+                <br>
             </div>
-            <div class="col">
-                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://st2.depositphotos.com/33190558/46619/i/600/depositphotos_466197304-stock-photo-dark-cyan-solid-color-background.jpg">
-                <h2 class="fw-normal">Aluno 3</h2>
+            <div class="col aluno">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    src="https://st2.depositphotos.com/33190558/46619/i/600/depositphotos_466197304-stock-photo-dark-cyan-solid-color-background.jpg">
+                <h2 class="fw-normal">Ian Felipe</h2>
                 <h5>Estudante</h5>
-                <h4><a href="" class="link-dark px-1"><i class="bi bi-github"></i></a><a href="" class="link-dark px-1"><i class="bi bi-linkedin"></i></i></a></h4>
+                <h4><a href="https://github.com/ianfelps" target="_blank" class="link-dark px-1"><i
+                            class="bi bi-github"></i></a><a
+                        href="https://www.linkedin.com/in/ian-felipe-souza-alves-b44381266/" target="_blank"
+                        class="link-dark px-1"><i class="bi bi-linkedin"></i></i></a></h4>
+                <p hidden>Eu sou Ian Felipe.</p>
+                <br>
             </div>
-            <div class="col">
-                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://a-static.mlcdn.com.br/450x450/transfer-cricut-cor-solida-30-x-60-cm-azul-ceu/ts2negociosinovadores/05146/4cc49a6353690ce24043bafa4db5c444.jpeg">
-                <h2 class="fw-normal">Aluno 4</h2>
+            <div class="col aluno">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="IMG/giphy.gif">
+                <h2 class="fw-normal">Pedro Angert</h2>
                 <h5>Estudante</h5>
-                <h4><a href="" class="link-dark px-1"><i class="bi bi-github"></i></a><a href="" class="link-dark px-1"><i class="bi bi-linkedin"></i></i></a></h4>
+                <h4><a href="" target="_blank" class="link-dark px-1"><i class="bi bi-github"></i></a><a href=""
+                        target="_blank" class="link-dark px-1"><i class="bi bi-linkedin"></i></i></a></h4>
+                <p hidden>Eu sou Pedro Angert.</p>
+                <br>
             </div>
-            <div class="col">
-                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://e0.pxfuel.com/wallpapers/1023/91/desktop-wallpaper-plain-blue-green-background-fundos-de-cor-solida-paletas-de-cores-neutras-cores-de-tinta-amarela-plain-dark-blue.jpg">
-                <h2 class="fw-normal">Aluno 5</h2>
+            <div class="col aluno">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    src="https://e0.pxfuel.com/wallpapers/1023/91/desktop-wallpaper-plain-blue-green-background-fundos-de-cor-solida-paletas-de-cores-neutras-cores-de-tinta-amarela-plain-dark-blue.jpg">
+                <h2 class="fw-normal">Victoria Fior</h2>
                 <h5>Estudante</h5>
-                <h4><a href="" class="link-dark px-1"><i class="bi bi-github"></i></a><a href="" class="link-dark px-1"><i class="bi bi-linkedin"></i></i></a></h4>
+                <h4><a href="" target="_blank" class="link-dark px-1"><i class="bi bi-github"></i></a><a href=""
+                        target="_blank" class="link-dark px-1"><i class="bi bi-linkedin"></i></i></a></h4>
+                <p hidden>Eu sou Victória Fior.</p>
+                <br>
             </div>
         </div>
     </div>
+    <hr><br>
+    <div id="feedback" class="container">
+        <h1 class="text-center">Feedback</h1>
+        <p>Lorem ipsum dolor sit amet. Et illum voluptatem in aspernatur voluptatum sit dolorum facilis ut adipisci
+            saepe
+            aut doloribus perspiciatis rem nemo voluptas.</p>
+        <form>
+            <div class="form-group col-5">
+                <label for="name">Nome:</label>
+                <input type="name" class="form-control" id="name" required>
+            </div><br>
+            <div class="form-group">
+                <label for="text">Seu Feedback:</label>
+                <textarea class="form-control" rows="5" id="comment" required></textarea>
+            </div><br>
+            <div class="form-group col-5">
+                <label for="text">Dê uma nota:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio2">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option4">
+                    <label class="form-check-label" for="inlineRadio2">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option5">
+                    <label class="form-check-label" for="inlineRadio2">5</label>
+                </div>
+            </div><br>
+            <button type="submit" class="btn btn-primary col-1">Enviar</button>
+        </form>
+    </div><br>
+
 </body>
 
 </html>

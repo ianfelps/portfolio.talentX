@@ -1,0 +1,93 @@
+
+body {
+  /*background-color:#01274C!important;*/ 
+}
+
+
+
+
+
+#imagem_arquitetura{
+    border-radius: 30px!important;
+    width: 80%!important;
+    margin-left: 10%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%!important;
+    transform: translate(-50%, -50%);
+    background-color: white; /* Cor de fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 70%; /* Largura da caixa de texto */
+}
+
+.carousel-textbox {
+    position: absolute;
+    background-color: white;
+    width: 70%;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.carousel-news {
+    margin: 0;
+}
+
+
+
+
+.aluno {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+  
+.aluno:hover {
+    transform: scale(1.1);
+}
+  
+.aluno.selected {
+    transform: scale(1.2);
+}
+
+
+
+/*Código referente a gifs */
+/* Adicione estilos conforme necessário */
+
+.imagem-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 300px; /* Defina a largura desejada para o contêiner */
+    height: 200px; /* Defina a altura desejada para o contêiner */
+}
+
+.dynamic-image, .dynamic-gif {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out; /* Adiciona transição suave na opacidade */
+}
+
+.dynamic-gif {
+    opacity: 0; /* Inicia o gif com opacidade 0 (invisível) */
+}
+
+.imagem-container:hover .dynamic-image {
+    opacity: 0; /* Torna a imagem estática invisível ao passar o mouse */
+}
+
+.imagem-container:hover .dynamic-gif {
+    opacity: 1; /* Torna o gif visível ao passar o mouse */
+}
+
+
