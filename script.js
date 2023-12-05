@@ -84,3 +84,95 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+
+
+// Funções pra trocar os gifs, 1 à 5 de acordo com a ordem na parte "sobre nós"
+
+function hoverImage1(element) {
+  // Obtém a referência para a imagem dentro do elemento
+  var image = element.querySelector('img');
+
+  // Troca o src da imagem para o gif na pasta IMG
+  image.src = 'IMG/giphy.gif';
+}
+
+function unhoverImage1(element) {
+  // Obtém a referência para a imagem dentro do elemento
+  var image = element.querySelector('img');
+
+  // Troca o src da imagem de volta para a imagem estática
+  image.src = 'IMG/Caio_Silveira.jpeg';  // Substitua com o caminho correto da imagem estática
+}
+
+
+
+function hoverImage2(element) {
+  // Obtém a referência para a imagem dentro do elemento
+  var image = element.querySelector('img');
+
+  // Troca o src da imagem para o gif na pasta IMG
+  image.src = 'IMG/giphy.gif';
+}
+
+function unhoverImage2(element) {
+  // Obtém a referência para a imagem dentro do elemento
+  var image = element.querySelector('img');
+
+  // Troca o src da imagem de volta para a imagem estática
+  image.src = 'IMG/Pedro_Angert.jpg';  // Substitua com o caminho correto da imagem estática
+}
+
+
+
+function hoverImage3(element) {
+  // Obtém a referência para a imagem dentro do elemento
+  var image = element.querySelector('img');
+
+  // Troca o src da imagem para o gif na pasta IMG
+  image.src = 'IMG/giphy.gif';
+}
+
+function unhoverImage3(element) {
+  // Obtém a referência para a imagem dentro do elemento
+  var image = element.querySelector('img');
+
+  // Troca o src da imagem de volta para a imagem estática
+  image.src = 'IMG/Caio_Henrique.jpeg';  // Substitua com o caminho correto da imagem estática
+}
+
+
+
+function hoverImage4(element) {
+  // Obtém a referência para a imagem dentro do elemento
+  var image = element.querySelector('img');
+
+  // Troca o src da imagem para o gif na pasta IMG
+  image.src = 'IMG/giphy.gif';
+}
+
+function unhoverImage4(element) {
+  // Obtém a referência para a imagem dentro do elemento
+  var image = element.querySelector('img');
+
+  // Troca o src da imagem de volta para a imagem estática
+  image.src = 'IMG/Ian_Alves.png';  // Substitua com o caminho correto da imagem estática
+}
+
+
+
+function hoverImage5(element) {
+  // Obtém a referência para a imagem dentro do elemento
+  var image = element.querySelector('img');
+
+  // Troca o src da imagem para o gif na pasta IMG
+  image.src = 'IMG/giphy.gif';
+}
+
+function unhoverImage5(element) {
+  // Obtém a referência para a imagem dentro do elemento
+  var image = element.querySelector('img');
+
+  // Troca o src da imagem de volta para a imagem estática
+  image.src = 'IMG/Victoria_Fior.png';  // Substitua com o caminho correto da imagem estática
+}

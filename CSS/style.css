@@ -13,6 +13,11 @@ body {
     margin-left: 10%;
 }
 
+#carouselT{
+margin-left: 3%;
+margin-right: 3%;
+}
+
 .carousel-caption {
     position: absolute;
     top: 50%;
@@ -47,11 +52,11 @@ body {
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
-  
+
 .aluno:hover {
     transform: scale(1.1);
 }
-  
+
 .aluno.selected {
     transform: scale(1.2);
 }
@@ -89,5 +94,6 @@ body {
 .imagem-container:hover .dynamic-gif {
     opacity: 1; /* Torna o gif visível ao passar o mouse */
 }
+
 
 
