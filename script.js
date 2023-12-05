@@ -176,3 +176,48 @@ function unhoverImage5(element) {
   // Troca o src da imagem de volta para a imagem estática
   image.src = 'IMG/Victoria_Fior.png';  // Substitua com o caminho correto da imagem estática
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  var elements = document.querySelectorAll('.fade-in');
+
+  function fadeInOnScroll() {
+      elements.forEach(function (element) {
+          if (isElementInViewport(element)) {
+              element.classList.add('active');
+          }
+      });
+  }
+
+  function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+  }
+
+  // Executar a função no carregamento da página e no evento de rolagem
+  fadeInOnScroll();
+  window.addEventListener('scroll', fadeInOnScroll);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+  window.addEventListener('scroll', function () {
+      // Mostra ou oculta o botão dependendo da posição do scroll
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopBtn.classList.add('visible');
+      } else {
+          scrollToTopBtn.classList.remove('visible');
+      }
+  });
+
+  // Adiciona um listener para rolar suavemente ao topo
+  scrollToTopBtn.addEventListener('click', function () {
+      document.body.scrollTop = 0; // Para browsers da web
+      document.documentElement.scrollTop = 0; // Para browsers modernos
+  });
+});

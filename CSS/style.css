@@ -96,4 +96,32 @@ margin-right: 3%;
 }
 
 
+/* efeito fade in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Pode ajustar conforme necessário */
+    transition: opacity 1s, transform 1s;
+}
 
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* botao scroll to top */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border: none;
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#scrollToTopBtn.visible {
+    opacity: 1;
+}
