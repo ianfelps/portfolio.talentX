@@ -3,9 +3,9 @@ body {
   /*background-color:#01274C!important;*/ 
 }
 
-
-
-
+svg{
+    border-radius: 5px;
+}
 
 #imagem_arquitetura{
     border-radius: 30px!important;
@@ -94,7 +94,6 @@ margin-right: 3%;
 .imagem-container:hover .dynamic-gif {
     opacity: 1; /* Torna o gif visível ao passar o mouse */
 }
-
 
 /* efeito fade in */
 .fade-in {
