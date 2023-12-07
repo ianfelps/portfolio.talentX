@@ -1,14 +1,14 @@
-.icons{
+.icons {
     border-radius: 5px;
 }
 
-.btn-primary{
-    background-color: rgb(37, 47, 62)!important;
-    border-color: rgb(46, 58, 77)!important;
+.btn-primary {
+    background-color: rgb(37, 47, 62) !important;
+    border-color: rgb(46, 58, 77) !important;
 }
 
-.btn-primary:hover{
-    background-color: rgb(46, 58, 77)!important;
+.btn-primary:hover {
+    background-color: rgb(46, 58, 77) !important;
 }
 
 .carousel {
@@ -24,10 +24,8 @@
     height: 32rem;
 }
 
-#imagem_arquitetura{
-    border-radius: 30px!important;
-    width: 80%!important;
-    margin-left: 10%;
+#imagem_arquitetura {
+    border-radius: 15px !important;
 }
 
 .aluno {
@@ -35,6 +33,9 @@
     cursor: pointer;
 }
 
+.alunos {
+    width: 96%;
+}
 
 .aluno:hover {
     transform: scale(1.1);
@@ -44,8 +45,6 @@
     transform: scale(1.2);
 }
 
-
-
 /*Código referente a gifs */
 /* Adicione estilos conforme necessário */
 
@@ -53,35 +52,43 @@
     position: relative;
     overflow: hidden;
     display: inline-block;
-    width: 300px; /* Defina a largura desejada para o contêiner */
-    height: 200px; /* Defina a altura desejada para o contêiner */
+    width: 300px;
+    /* Defina a largura desejada para o contêiner */
+    height: 200px;
+    /* Defina a altura desejada para o contêiner */
 }
 
-.dynamic-image, .dynamic-gif {
+.dynamic-image,
+.dynamic-gif {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    transition: opacity 0.3s ease-in-out; /* Adiciona transição suave na opacidade */
+    transition: opacity 0.3s ease-in-out;
+    /* Adiciona transição suave na opacidade */
 }
 
 .dynamic-gif {
-    opacity: 0; /* Inicia o gif com opacidade 0 (invisível) */
+    opacity: 0;
+    /* Inicia o gif com opacidade 0 (invisível) */
 }
 
 .imagem-container:hover .dynamic-image {
-    opacity: 0; /* Torna a imagem estática invisível ao passar o mouse */
+    opacity: 0;
+    /* Torna a imagem estática invisível ao passar o mouse */
 }
 
 .imagem-container:hover .dynamic-gif {
-    opacity: 1; /* Torna o gif visível ao passar o mouse */
+    opacity: 1;
+    /* Torna o gif visível ao passar o mouse */
 }
 
 /* efeito fade in */
 .fade-in {
     opacity: 0;
-    transform: translateY(20px); /* Pode ajustar conforme necessário */
+    transform: translateY(20px);
+    /* Pode ajustar conforme necessário */
     transition: opacity 1s, transform 1s;
 }
 

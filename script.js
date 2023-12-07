@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  
+
 
   alunos.forEach(aluno => {
     aluno.addEventListener('click', function () {
@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
     selectedInfo.textContent = '';
 
     // Adiciona a primeira letra imediatamente
-  selectedInfo.textContent += text[0];
-  
+    selectedInfo.textContent += text[0];
+
     // Cria um intervalo para simular o efeito de typewriting
     let index = 1;
     typewritingIntervalId = setInterval(function () {
@@ -65,22 +65,22 @@ document.addEventListener('DOMContentLoaded', function () {
     selectedTitle.textContent = 'Nossa História';
 
     // Reseta as informações do título e inicia o efeito de typewriting
-    updateInfoWithTypewriting('Lorem ipsum dolor sit amet. Et illum voluptatem in aspernatur voluptatum sit dolorum facilis ut adipisci saepe aut doloribus perspiciatis rem nemo voluptas. Aut totam dolores ut quia voluptatibus aut expedita natus ut quibusdam itaque. Et harum quia aut exercitationem rerum est consectetur nobis ut deleniti inventore.');
+    updateInfoWithTypewriting('Somos uma equipe dinâmica que desafia as barreiras da distância ao trabalhar remotamente na maior parte do tempo. Conectados virtualmente, encontramos na tecnologia a ponte para colaboração efetiva e inovação. O que torna nossa jornada ainda mais única é o fato de que formamos nossa equipe de uma maneira inesperada, e, surpreendentemente, nos demos extraordinariamente bem. Cada membro contribui com sua expertise, consolidando nossa força coletiva em um ambiente digital que inspira crescimento, aprendizado e conquistas compartilhadas.');
 
     // Reseta a variável do aluno selecionado
     selectedAluno = null;
   }
 });
- 
+
 
 
 
 document.addEventListener('DOMContentLoaded', function () {
   // Seleciona o carrossel
   var carousel = new bootstrap.Carousel(document.querySelector('#myCarousel'), {
-      interval: 60000,  // Defina o intervalo desejado em milissegundos
-      pause: false,    // Define se deve pausar em hover (false para não pausar)
-      ride: 'carousel' // Começa a rotação automática imediatamente
+    interval: 60000,  // Defina o intervalo desejado em milissegundos
+    pause: false,    // Define se deve pausar em hover (false para não pausar)
+    ride: 'carousel' // Começa a rotação automática imediatamente
   });
 });
 
@@ -181,21 +181,21 @@ document.addEventListener('DOMContentLoaded', function () {
   var elements = document.querySelectorAll('.fade-in');
 
   function fadeInOnScroll() {
-      elements.forEach(function (element) {
-          if (isElementInViewport(element)) {
-              element.classList.add('active');
-          }
-      });
+    elements.forEach(function (element) {
+      if (isElementInViewport(element)) {
+        element.classList.add('active');
+      }
+    });
   }
 
   function isElementInViewport(el) {
-      var rect = el.getBoundingClientRect();
-      return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
   }
 
   // Executar a função no carregamento da página e no evento de rolagem
@@ -207,17 +207,17 @@ document.addEventListener('DOMContentLoaded', function () {
   var scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
   window.addEventListener('scroll', function () {
-      // Mostra ou oculta o botão dependendo da posição do scroll
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          scrollToTopBtn.classList.add('visible');
-      } else {
-          scrollToTopBtn.classList.remove('visible');
-      }
+    // Mostra ou oculta o botão dependendo da posição do scroll
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.classList.add('visible');
+    } else {
+      scrollToTopBtn.classList.remove('visible');
+    }
   });
 
   // Adiciona um listener para rolar suavemente ao topo
   scrollToTopBtn.addEventListener('click', function () {
-      document.body.scrollTop = 0; // Para browsers da web
-      document.documentElement.scrollTop = 0; // Para browsers modernos
+    document.body.scrollTop = 0; // Para browsers da web
+    document.documentElement.scrollTop = 0; // Para browsers modernos
   });
 });
