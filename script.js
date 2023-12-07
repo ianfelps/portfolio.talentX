@@ -77,8 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
   // Seleciona o carrossel
-  var carousel = new bootstrap.Carousel(document.querySelector('#carouselT'), {
-      interval: 3000,  // Defina o intervalo desejado em milissegundos
+  var carousel = new bootstrap.Carousel(document.querySelector('#myCarousel'), {
+      interval: 60000,  // Defina o intervalo desejado em milissegundos
       pause: false,    // Define se deve pausar em hover (false para não pausar)
       ride: 'carousel' // Começa a rotação automática imediatamente
   });

@@ -1,10 +1,27 @@
-
-body {
-  /*background-color:#01274C!important;*/ 
+.icons{
+    border-radius: 5px;
 }
 
-svg{
-    border-radius: 5px;
+.btn-primary{
+    background-color: rgb(37, 47, 62)!important;
+    border-color: rgb(46, 58, 77)!important;
+}
+
+.btn-primary:hover{
+    background-color: rgb(46, 58, 77)!important;
+}
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 32rem;
 }
 
 #imagem_arquitetura{
@@ -13,45 +30,11 @@ svg{
     margin-left: 10%;
 }
 
-#carouselT{
-margin-left: 3%;
-margin-right: 3%;
-}
-
-.carousel-caption {
-    position: absolute;
-    top: 50%;
-    left: 50%!important;
-    transform: translate(-50%, -50%);
-    background-color: white; /* Cor de fundo branco */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 10px; /* Borda arredondada */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    width: 70%; /* Largura da caixa de texto */
-}
-
-.carousel-textbox {
-    position: absolute;
-    background-color: white;
-    width: 70%;
-    padding: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-}
-
-.carousel-news {
-    margin: 0;
-}
-
-
-
-
 .aluno {
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
+
 
 .aluno:hover {
     transform: scale(1.1);
@@ -113,9 +96,9 @@ margin-right: 3%;
     bottom: 25px;
     right: 25px;
     border: none;
-    width: 55px;
-    height: 55px;
-    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
