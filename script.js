@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (index === text.length) {
         clearInterval(typewritingIntervalId);
       }
-    }, 15); // Ajuste a velocidade do typewriting aqui (em milissegundos)
+    }, 20); // Ajuste a velocidade do typewriting aqui (em milissegundos)
   }
 
   function resetSelection() {
@@ -65,15 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
     selectedTitle.textContent = 'Nossa História';
 
     // Reseta as informações do título e inicia o efeito de typewriting
-    updateInfoWithTypewriting('Somos uma equipe dinâmica que desafia as barreiras da distância ao trabalhar remotamente na maior parte do tempo. Conectados virtualmente, encontramos na tecnologia a ponte para colaboração efetiva e inovação. O que torna nossa jornada ainda mais única é o fato de que formamos nossa equipe de uma maneira inesperada, e, surpreendentemente, nos demos extraordinariamente bem. Cada membro contribui com sua expertise, consolidando nossa força coletiva em um ambiente digital que inspira crescimento, aprendizado e conquistas compartilhadas.');
+    updateInfoWithTypewriting('Somos uma equipe dinâmica que desafia as barreiras da distância ao trabalhar remotamente na maior parte do tempo. Conectados virtualmente, encontramos na tecnologia a ponte para colaboração efetiva e inovação. O que torna nossa jornada ainda mais única é o fato de que formamos nossa equipe de uma maneira inesperada, e, surpreendentemente, nos demos extraordinariamente bem. Cada membro contribui com sua expertise, consolidando nossa força coletiva em um ambiente digital que inspira crescimento, aprendizado e conquistas compartilhadas. Fique a vontade para selecionar e saber mais sobre cada um dos integrantes do projeto.');
 
     // Reseta a variável do aluno selecionado
     selectedAluno = null;
   }
 });
-
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
   // Seleciona o carrossel
@@ -83,9 +80,6 @@ document.addEventListener('DOMContentLoaded', function () {
     ride: 'carousel' // Começa a rotação automática imediatamente
   });
 });
-
-
-
 
 // Funções pra trocar os gifs, 1 à 5 de acordo com a ordem na parte "sobre nós"
 
