@@ -6,16 +6,15 @@ document.addEventListener('DOMContentLoaded', function () {
   let selectedAluno = null;
   let typewritingIntervalId = null;
 
-
-
-
-
   alunos.forEach(aluno => {
     aluno.addEventListener('click', function () {
       if (selectedAluno === this) {
         // Se o mesmo aluno for clicado novamente, desfaz a seleção
         resetSelection();
       } else {
+
+        scrollToSection();
+
         // Remove a classe 'selected' de todos os alunos
         alunos.forEach(a => a.classList.remove('selected'));
 
@@ -82,8 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Funções pra trocar os gifs, 1 à 5 de acordo com a ordem na parte "sobre nós"
-
-function hoverImage1(element) {
+function hoverImage0(element) {
   // Obtém a referência para a imagem dentro do elemento
   var image = element.querySelector('img');
 
@@ -91,12 +89,28 @@ function hoverImage1(element) {
   image.src = 'IMG/giphy.gif';
 }
 
+function unhoverImage0(element) {
+  // Obtém a referência para a imagem dentro do elemento
+  var image = element.querySelector('img');
+
+  // Troca o src da imagem de volta para a imagem estática
+  image.src = 'IMG/aws.svg';  // Substitua com o caminho correto da imagem estática
+}
+
+function hoverImage1(element) {
+  // Obtém a referência para a imagem dentro do elemento
+  var image = element.querySelector('img');
+
+  // Troca o src da imagem para o gif na pasta IMG
+  image.src = 'IMG/Caio_Silveira.gif';
+}
+
 function unhoverImage1(element) {
   // Obtém a referência para a imagem dentro do elemento
   var image = element.querySelector('img');
 
   // Troca o src da imagem de volta para a imagem estática
-  image.src = 'IMG/Caio_Silveira.jpeg';  // Substitua com o caminho correto da imagem estática
+  image.src = 'IMG/Caio_Silveira.png';  // Substitua com o caminho correto da imagem estática
 }
 
 
@@ -106,7 +120,7 @@ function hoverImage2(element) {
   var image = element.querySelector('img');
 
   // Troca o src da imagem para o gif na pasta IMG
-  image.src = 'IMG/giphy.gif';
+  image.src = 'IMG/Pedro_Angert.gif';
 }
 
 function unhoverImage2(element) {
@@ -114,7 +128,7 @@ function unhoverImage2(element) {
   var image = element.querySelector('img');
 
   // Troca o src da imagem de volta para a imagem estática
-  image.src = 'IMG/Pedro_Angert.jpg';  // Substitua com o caminho correto da imagem estática
+  image.src = 'IMG/Pedro_Angert.png';  // Substitua com o caminho correto da imagem estática
 }
 
 
@@ -124,7 +138,7 @@ function hoverImage3(element) {
   var image = element.querySelector('img');
 
   // Troca o src da imagem para o gif na pasta IMG
-  image.src = 'IMG/giphy.gif';
+  image.src = 'IMG/Caio_Henrique.gif';
 }
 
 function unhoverImage3(element) {
@@ -132,7 +146,7 @@ function unhoverImage3(element) {
   var image = element.querySelector('img');
 
   // Troca o src da imagem de volta para a imagem estática
-  image.src = 'IMG/Caio_Henrique.jpeg';  // Substitua com o caminho correto da imagem estática
+  image.src = 'IMG/Caio_Henrique.png';  // Substitua com o caminho correto da imagem estática
 }
 
 
@@ -142,7 +156,7 @@ function hoverImage4(element) {
   var image = element.querySelector('img');
 
   // Troca o src da imagem para o gif na pasta IMG
-  image.src = 'IMG/giphy.gif';
+  image.src = 'IMG/Ian_Alves.gif';
 }
 
 function unhoverImage4(element) {
@@ -160,7 +174,7 @@ function hoverImage5(element) {
   var image = element.querySelector('img');
 
   // Troca o src da imagem para o gif na pasta IMG
-  image.src = 'IMG/giphy.gif';
+  image.src = 'IMG/Victoria_Fior.gif';
 }
 
 function unhoverImage5(element) {
@@ -170,6 +184,27 @@ function unhoverImage5(element) {
   // Troca o src da imagem de volta para a imagem estática
   image.src = 'IMG/Victoria_Fior.png';  // Substitua com o caminho correto da imagem estática
 }
+
+function scrollToSection() {
+        var elementoAlvo = document.getElementById("selectedTitle");
+        
+        // Obtém as coordenadas do elemento na tela
+        var retangulo = elementoAlvo.getBoundingClientRect();
+
+        // Verifica se o elemento está visível na tela
+        if (
+            retangulo.top >= 0 &&
+            retangulo.left >= 0 &&
+            retangulo.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            retangulo.right <= (window.innerWidth || document.documentElement.clientWidth)
+        ) {
+            // A seção alvo já está na tela, não é necessário rolar
+            console.log("A seção já está visível na tela.");
+        } else {
+            // A seção alvo não está na tela, rola até ela
+            elementoAlvo.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 
 document.addEventListener('DOMContentLoaded', function () {
   var elements = document.querySelectorAll('.fade-in');
